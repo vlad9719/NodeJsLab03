@@ -12,7 +12,7 @@ export default async function createReport () : Promise<object> {
         for (let i = 0; i < NUMBER_OF_REQUESTS; i++) {
             const beforeRequest = Date.now();
             const afterRequest = await makeRequest();
-            console.log(i);
+            console.log('Request ' + i + 'sent');
             const requestTime = afterRequest - beforeRequest;
             requestTimeSum += requestTime;
         }
