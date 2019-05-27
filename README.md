@@ -177,25 +177,15 @@ Put a valid ```stock_id``` in the URL of request, which you can find
 The expected response looks like this:
 ```
 {
-    "data": [
-        {
-            "contracts": [
-                {
-                    "createdAt": "2019-05-25",
-                    "stockName": "Stock 5",
-                    "rentalCost": 6798.3
-                },
-                {
-                    "createdAt": "2019-05-27",
-                    "stockName": "Stock 6000",
-                    "rentalCost": 1234
-                }
-            ]
-        },
-        {
-            "total": 8032.3
-        }
-    ]
+    "data": {
+        "contracts": [
+            {
+                "renterName": "Renter 5000",
+                "createdAt": "2019-05-25",
+                "rentalCost": 5611.72
+            }
+        ]
+    }
 }
 ```
 
@@ -219,7 +209,7 @@ The expected response looks like this:
 
 ###Checking task2
 
-You may now stop the server, go to directory task2 and start the server, that
+You may now stop the server, go to directory ```task2``` and start the server that
 uses Sequelize for the API:
 ```
 cd ..
